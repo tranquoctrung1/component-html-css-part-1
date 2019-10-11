@@ -1,4 +1,16 @@
 
+// query loader
+window.addEventListener('DOMContentLoaded', function() {
+  QueryLoader2(document.querySelector("body"), {
+      barColor: "#efefef",
+      backgroundColor: "#111",
+      percentage: true,
+      barHeight: 1,
+      minimumTime: 200,
+      fadeOutTime: 1000
+  });
+});
+
 // smooth croll function
 $('a[href*="#"]')
   // Remove links that don't actually link to anything

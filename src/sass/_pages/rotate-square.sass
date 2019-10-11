@@ -1,0 +1,67 @@
+.rotate-square
+	display: flex
+	justify-content: center
+	align-items: center
+	height: 100vh
+	.rotate-square-loader
+		position: relative
+		width: 50px
+		height: 50px
+		background: #000000
+		box-sizing: border-box
+		margin: 0 auto
+		animation: rotate 1s linear infinite
+		&::before, .square::before
+			content: ''
+			display: block
+			position: absolute
+			top: 2px
+			left: 2px
+			right: 2px
+			bottom: 2px
+			background: #fff
+		.square
+			position: absolute
+			width: 100%
+			height: 100%
+			background: #000000
+			animation: animate 1s linear infinite
+			&.one
+				top: -100%
+				left: -2px
+				transform-origin: bottom right
+				&::before
+					background: #1abc9c
+			&.two
+				right: -100%
+				top: -2px
+				transform-origin: bottom left
+				&::before
+					background: #2ecc71
+			&.three
+				bottom: -100%
+				left: 2px
+				transform-origin: top left
+				&::before
+					background: #3498db
+			&.four
+				left: -100%
+				top: 2px
+				transform-origin: top right
+				&::before
+					background: #9b59b6
+			
+
+@keyframes animate
+	0%
+		transform: rotate(0deg)
+	50%, 100%
+		transform: rotate(180deg)
+@keyframes rotate
+	0%
+		transform: rotate(90deg)
+	50%, 100%
+		transform: rotate(0deg)
+
+
+// up to you, enable background or default 

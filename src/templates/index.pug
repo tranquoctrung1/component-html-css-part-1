@@ -1,0 +1,31 @@
+extends _layout/layout
+
+//- Các giá trị mặc định cho trang web
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+block body
+	section.mobile-style
+		.container
+			.row
+				.col
+					.mobile
+						.top
+						.bottom
+						.screen
+							img.image(src="../img/bg.jpg", alt="background	", srcset="")
+							h2 13:00 
+								span AM
+								br
+								span 11/10/2019
+							nav
+								ul
+									li
+										i.fas.fa-phone
+									li
+										i.fab.fa-facebook-messenger
+									li
+										i.fas.fa-camera
+									li
+										i.fas.fa-image

@@ -51,8 +51,17 @@ $('a[href*="#"]')
 
 $(document).ready(function()
 {
+  // Mobile layer section1 
   $('.bottom').on('click', () =>
   {
     $('.screen').toggleClass('active')
   })
+
+  // product-image-slider
+  $(".img-product").on('click mouseover', (e) => 
+    {
+    e.preventDefault()
+      let value =  $(this)[0].activeElement.attributes.href.nodeValue
+      $('.imgBox img').attr("src", value)
+    })
 })

@@ -357,3 +357,22 @@ section.layer-3d-image {
     transform: rotate(45deg); }
   100% {
     transform: rotate(405deg); } }
+
+.product-image-slider .container .row .col nav {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .product-image-slider .container .row .col nav ul {
+    list-style-type: none; }
+    .product-image-slider .container .row .col nav ul li {
+      padding: 10px;
+      border: 1px solid #0000001a;
+      margin: 10px; }
+      .product-image-slider .container .row .col nav ul li a img {
+        width: 100px;
+        height: 100px; }
+  .product-image-slider .container .row .col nav .imgBox img {
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    border: 1px solid #0000001a; }

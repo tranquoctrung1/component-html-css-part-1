@@ -64,4 +64,11 @@ $(document).ready(function()
       let value =  $(this)[0].activeElement.attributes.href.nodeValue
       $('.imgBox img').attr("src", value)
     })
+
+  // screen-overlay section
+  $('.toggle').on('click', () =>
+  {
+    $('.toggle').toggleClass('active')
+    $('.navigation').toggleClass('active')
+  })
 })

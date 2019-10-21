@@ -501,3 +501,128 @@ section.layer-3d-image {
           margin-top: 10px; }
           .video-full-screen .container .row .col .forget-password a {
             color: #000; }
+
+.quote-box {
+  height: 100vh;
+  background-color: #03a9f4;
+  font-family: sans-serif; }
+  .quote-box .container {
+    height: 100vh; }
+    .quote-box .container .row {
+      height: 100vh; }
+      .quote-box .container .row .col {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .quote-box .container .row .col .box {
+          position: relative;
+          width: 500px;
+          height: 400px;
+          transform-style: preserve-3d;
+          perspective: 2000px;
+          transition: .5s all ease-in-out; }
+          .quote-box .container .row .col .box::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border-top: 20px solid #fff;
+            border-left: 20px solid #fff;
+            box-sizing: border-box; }
+          .quote-box .container .row .col .box::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border-bottom: 20px solid #fff;
+            border-right: 20px solid #fff;
+            box-sizing: border-box; }
+          .quote-box .container .row .col .box .fas {
+            width: 60px;
+            height: 60px;
+            background: #ffffff;
+            color: #262626;
+            text-align: center;
+            line-height: 60px;
+            font-size: 30px; }
+            .quote-box .container .row .col .box .fas.one {
+              position: absolute;
+              bottom: 20px;
+              right: 20px;
+              z-index: 1; }
+          .quote-box .container .row .col .box:hover {
+            transform: rotateY(-30deg) skewY(5deg); }
+            .quote-box .container .row .col .box:hover .text {
+              transform: rotateY(30deg) skewY(-5deg); }
+          .quote-box .container .row .col .box .text {
+            position: absolute;
+            top: 30px;
+            left: -30px;
+            background: #262626;
+            width: calc(100% + 60px);
+            height: calc(100% - 60px);
+            transition: .5s all ease-in-out;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+            .quote-box .container .row .col .box .text .text__content {
+              padding: 40px 80px;
+              box-sizing: border-box;
+              text-align: center;
+              color: #fff; }
+              .quote-box .container .row .col .box .text .text__content h2 {
+                padding-bottom: 20px; }
+            .quote-box .container .row .col .box .text .fas {
+              width: 60px;
+              height: 60px;
+              background: #ffffff;
+              color: #262626;
+              text-align: center;
+              line-height: 60px;
+              font-size: 30px; }
+              .quote-box .container .row .col .box .text .fas.two {
+                position: absolute;
+                top: 0;
+                left: 0; }
+
+.wrap-text-circle {
+  height: 100vh;
+  background: url("../img/bg.jpg") no-repeat center;
+  background-size: cover; }
+  .wrap-text-circle .container {
+    height: 100vh; }
+    .wrap-text-circle .container .row {
+      height: 100vh; }
+      .wrap-text-circle .container .row .col {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .wrap-text-circle .container .row .col .wrapper {
+          width: 600px;
+          padding: 30px;
+          background: #fff;
+          border-radius: 10px;
+          box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2); }
+          .wrap-text-circle .container .row .col .wrapper .circle {
+            width: 200px;
+            height: 200px;
+            background: url("../img/bg.jpg");
+            border-radius: 50%;
+            float: left;
+            shape-outside: circle();
+            margin: 60px 30px 30px 0; }
+          .wrap-text-circle .container .row .col .wrapper p {
+            margin: 0;
+            padding: 0;
+            text-align: justify;
+            line-height: 22px; }

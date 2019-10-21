@@ -454,3 +454,50 @@ section.layer-3d-image {
                   opacity: .5;
                   color: #95afc0;
                   transform: translate(-50%, -50%); }
+
+.video-full-screen {
+  height: 100vh; }
+  .video-full-screen .container {
+    height: 100vh; }
+    .video-full-screen .container .row {
+      height: 100vh; }
+      .video-full-screen .container .row .col {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .video-full-screen .container .row .col .login-form {
+          background: rgba(255, 255, 255, 0.7);
+          padding: 60px 60px;
+          box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+          width: 400px; }
+          .video-full-screen .container .row .col .login-form .header-content {
+            text-align: center;
+            margin-bottom: 40px; }
+          .video-full-screen .container .row .col .login-form .text-username, .video-full-screen .container .row .col .login-form .text-password {
+            margin: 20px 0;
+            box-sizing: border-box; }
+            .video-full-screen .container .row .col .login-form .text-username input, .video-full-screen .container .row .col .login-form .text-password input {
+              outline: none;
+              border: 1px solid rgba(0, 0, 0, 0.5);
+              background: transparent;
+              font-size: 18px;
+              padding: 3px 5px;
+              width: 100%; }
+          .video-full-screen .container .row .col .login-form .button-submit {
+            box-sizing: border-box; }
+            .video-full-screen .container .row .col .login-form .button-submit button {
+              background: #e91e63;
+              color: #fff;
+              border: none;
+              cursor: pointer;
+              width: 100%;
+              padding: 5px 0;
+              text-transform: uppercase;
+              transition: .5s all ease-in-out; }
+              .video-full-screen .container .row .col .login-form .button-submit button:hover {
+                background: #0090ff; }
+        .video-full-screen .container .row .col .forget-password {
+          margin-top: 10px; }
+          .video-full-screen .container .row .col .forget-password a {
+            color: #000; }

@@ -71,4 +71,7 @@ $(document).ready(function()
     $('.toggle').toggleClass('active')
     $('.navigation').toggleClass('active')
   })
+
+  // this line can be coded by html (encourage). This file belong to business layer so this shoundn't write here
+  // $('.video-full-screen').vide('../../videos/videoFroBg')
 })

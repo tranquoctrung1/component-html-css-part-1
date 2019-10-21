@@ -85,6 +85,12 @@ function copy_fonts()
     .pipe(gulp.dest('./.dist/fonts'));
 }
 
+function copy_videos()
+{
+    return gulp.src('./src/videos/*.*')
+    .pipe(gulp.dest('./.dist/videos'));
+}
+
 
 function copy_webfonts () {
     return gulp.src('./src/webfonts/*.*')
@@ -126,6 +132,7 @@ function noi_file_js ()
         'bower_components/bootstrap/dist/js/bootstrap.min.js',
         'bower_components/jquery-lazy/jquery.lazy.min.js',
         'bower_components/QueryLoader2/queryloader2.min.js',
+        'bower_components/vide/dist/jquery.vide.min.js',
         // owl carousel
         'bower_components/owl.carousel/dist/owl.carousel.min.js'
     ])
@@ -153,6 +160,7 @@ exports.default = gulp.series(
     noi_file_css,
     noi_file_js,
     copy_fonts,
+    copy_videos,
     copy_favicon,
     copy_webfonts,
     // chạy song mới được

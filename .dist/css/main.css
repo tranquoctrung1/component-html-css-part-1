@@ -626,3 +626,66 @@ section.layer-3d-image {
             padding: 0;
             text-align: justify;
             line-height: 22px; }
+
+.animating-perspective {
+  height: 100vh;
+  position: relative;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto; }
+  .animating-perspective .bg1, .animating-perspective .bg2 {
+    width: 100%;
+    height: 100%;
+    position: absolute; }
+  .animating-perspective .bg1 {
+    z-index: -1;
+    background: #0984e3;
+    clip-path: polygon(72% 74%, 100% 27%, 100% 100%, 5% 100%); }
+  .animating-perspective .bg2 {
+    z-index: -2;
+    background: #435be3;
+    clip-path: polygon(63% 69%, 100% 9%, 100% 100%, 5% 100%); }
+  .animating-perspective .container {
+    height: 100vh; }
+    .animating-perspective .container .row {
+      height: 100vh; }
+      .animating-perspective .container .row .col {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 50% auto;
+        height: auto;
+        align-self: center;
+        margin: 0 50px; }
+        .animating-perspective .container .row .col .right nav ul {
+          list-style-type: none;
+          perspective: 1000px; }
+          .animating-perspective .container .row .col .right nav ul li {
+            display: grid;
+            grid-template-columns: 20% auto;
+            border-radius: 10px;
+            padding: 15px;
+            cursor: pointer;
+            transform: rotateY(-30deg) rotateX(15deg);
+            position: absolute;
+            border-bottom: 4px solid rgba(0, 0, 0, 0.2);
+            mix-blend-mode: multiply;
+            transition: .5s all ease-in-out; }
+            .animating-perspective .container .row .col .right nav ul li:nth-child(1) {
+              background: #bfe8fc;
+              top: -105px;
+              z-index: 2; }
+            .animating-perspective .container .row .col .right nav ul li:nth-child(2) {
+              background: #faffc8;
+              z-index: 1; }
+            .animating-perspective .container .row .col .right nav ul li:nth-child(3) {
+              background: #fce8f5;
+              top: 105px; }
+            .animating-perspective .container .row .col .right nav ul li:hover {
+              transform: rotateY(-22deg) rotateX(7deg) scale(1.03);
+              z-index: 3;
+              mix-blend-mode: normal; }
+            .animating-perspective .container .row .col .right nav ul li img {
+              width: 70px; }
+        .animating-perspective .container .row .col .left p {
+          color: #494949;
+          line-height: 1.5em; }

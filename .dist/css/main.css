@@ -714,3 +714,29 @@ section.layer-3d-image {
     .sticky-section-scrolling .box-image:nth-child(5) {
       background: url("../img/sticky05.jpg");
       background-size: cover; }
+
+.hover-card-tiltjs {
+  height: 100vh; }
+  .hover-card-tiltjs .container {
+    height: 100vh; }
+    .hover-card-tiltjs .container .row {
+      height: 100vh; }
+      .hover-card-tiltjs .container .row .col-md-4 {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .hover-card-tiltjs .container .row .col-md-4 .card {
+          height: 70%;
+          width: 80%;
+          background: #81ecec;
+          border-radius: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transform-style: preserve-3d; }
+          .hover-card-tiltjs .container .row .col-md-4 .card .child {
+            width: 30%;
+            height: 20%;
+            background: #2d3436;
+            transform: translateZ(20px); }

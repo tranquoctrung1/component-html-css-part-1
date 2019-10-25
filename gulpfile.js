@@ -133,6 +133,7 @@ function noi_file_js ()
         'bower_components/jquery-lazy/jquery.lazy.min.js',
         'bower_components/QueryLoader2/queryloader2.min.js',
         'bower_components/vide/dist/jquery.vide.min.js',
+        'node_modules/tilt.js/dest/tilt.jquery.min.js',
         // owl carousel
         'bower_components/owl.carousel/dist/owl.carousel.min.js'
     ])

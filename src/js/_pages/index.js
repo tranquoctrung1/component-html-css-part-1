@@ -74,10 +74,16 @@ $(document).ready(function()
 
   // this line can be coded by html (encourage). This file belong to business layer so this shoundn't write here
   // $('.video-full-screen').vide('../../videos/videoFroBg')
-
+  // hover-card using tilt.js
   $('.hover-card-tiltjs .container .row .col-md-4 .card').tilt({
     glare: true,
     maxGlare: .5,
     scale: 1.2
+  })
+
+  // iphone6 layer
+  $('.iphone6 .container .row .col .mobile .home').on('click', () =>
+  {
+    $('.iphone6 .container .row .col .mobile .screen').toggleClass('active')
   })
 })

@@ -86,4 +86,14 @@ $(document).ready(function()
   {
     $('.iphone6 .container .row .col .mobile .screen').toggleClass('active')
   })
+
+  // move-background-scroll
+  $(window).scroll(() =>
+  {
+    var scroll_position = $(window).scrollTop()/2 - 8500
+
+    $('.move-background .box').css({
+      'background-position-x': - scroll_position + 'px',
+    })
+  })
 })

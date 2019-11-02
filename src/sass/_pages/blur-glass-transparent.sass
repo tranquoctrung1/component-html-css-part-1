@@ -1,0 +1,35 @@
+.blur-glass-transparent
+	height: 100vh
+	background: url('../img/bg.jpg') no-repeat center
+	background-size: cover
+	background-attachment: fixed
+	.container
+		height: 100%
+		.row
+			height: 100%
+			.col
+				height: 100%
+				display: flex
+				justify-content: center
+				align-items: center
+				.box
+					width: 50%
+					padding: 50px
+					color: white
+					box-shadow: 0 5px 15px rgba(0, 0, 0, .5)
+					overflow: hidden
+					position: relative
+					z-index: 2
+					&::before
+						content: ''
+						display: block
+						position: absolute
+						top: -20px
+						right: -20px
+						left: -20px
+						bottom: -20px
+						background: url('../img/bg.jpg') no-repeat center
+						background-size: cover
+						background-attachment: fixed
+						z-index: -1
+						filter: blur(2px)

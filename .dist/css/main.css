@@ -967,3 +967,54 @@ section.layer-3d-image {
     transform: rotate(0deg); }
   100% {
     transform: rotate(360deg); } }
+
+.animated-wave {
+  background: url("../img/bg.jpg") no-repeat center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative; }
+  .animated-wave .wave {
+    background: url("../img/wave.png");
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 143px;
+    animation: wave-animate 10s linear infinite; }
+    .animated-wave .wave::before {
+      position: absolute;
+      width: 100%;
+      content: '';
+      display: block;
+      background: url("../img/wave.png");
+      height: 143px;
+      top: 0;
+      left: 0;
+      opacity: 0.5;
+      animation: wave-animate-reverse 10s linear infinite; }
+    .animated-wave .wave::after {
+      position: absolute;
+      width: 100%;
+      content: '';
+      display: block;
+      background: url("../img/wave.png");
+      height: 143px;
+      top: 0;
+      left: 0;
+      opacity: 0.7;
+      animation-delay: -5s;
+      animation: wave-animate 20s linear infinite; }
+
+@keyframes wave-animate {
+  0% {
+    background-position: 0px; }
+  100% {
+    background-position: 1360px; } }
+
+@keyframes wave-animate-reverse {
+  0% {
+    background-position: 1360px; }
+  100% {
+    background-position: 0; } }

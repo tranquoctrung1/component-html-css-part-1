@@ -61,7 +61,8 @@ function noi_file_css ()
         'bower_components/font-awesome/css/font-awesome.min.css',
         'node_modules/@fortawesome/fontawesome-free/css/all.css',
         'bower_components/animate.css/animate.min.css',
-
+        'node_modules/splitting/dist/splitting.css',
+        'node_modules/splitting/dist/splitting-cells.css',
         // owl carousel
         'bower_components/owl.carousel/dist/assets/owl.carousel.min.css',
         'bower_components/owl.carousel/dist/assets/owl.theme.default.min.css',
@@ -134,6 +135,7 @@ function noi_file_js ()
         'bower_components/QueryLoader2/queryloader2.min.js',
         'bower_components/vide/dist/jquery.vide.min.js',
         'node_modules/tilt.js/dest/tilt.jquery.min.js',
+        'node_modules/splitting/dist/splitting.min.js',
         // owl carousel
         'bower_components/owl.carousel/dist/owl.carousel.min.js'
     ])

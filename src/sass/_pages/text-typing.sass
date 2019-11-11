@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Jomolhari|Yeon+Sung&display=swap')
+.text-typing-animation
+	font-family: 'Yeon Sung', cursive
+	font-family: 'Jomolhari', serifcursive
+	height: 100vh
+	.container
+		height: 100%
+		.row
+			height: 100%
+			.col
+				height: 100%
+				display: flex
+				justify-content: center
+				align-items: center
+				.word
+					visibility: hidden
+					animation: typing-text 0s steps(2) forwards
+					animation-delay: calc(0.04s * var(--word-index))
+.text-typing-animation2
+	font-family: 'Yeon Sung', cursive
+	font-family: 'Jomolhari', serifcursive
+	height: 100vh
+	.container
+		height: 100%
+		.row
+			height: 100%
+			.col
+				height: 100%
+				display: flex
+				justify-content: center
+				align-items: center
+				.word
+					opacity: 0
+					animation: typing-text2 3s infinite
+					animation-delay: calc(0.04s * var(--word-index))
+
+@keyframes typing-text
+	0%
+		visibility: hidden
+	100%
+		visibility: visible
+
+@keyframes typing-text2
+	0%
+		opacity: 0
+	100%
+		opacity: 1

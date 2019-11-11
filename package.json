@@ -8,6 +8,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-uglify-es": "^1.0.4",
     "jquery": "^3.3.1",
+    "splitting": "^1.0.6",
     "tilt.js": "^1.2.1"
   },
   "devDependencies": {

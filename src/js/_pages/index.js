@@ -9,6 +9,9 @@ window.addEventListener('DOMContentLoaded', function() {
       minimumTime: 200,
       fadeOutTime: 1000
   });
+
+  // use splitting js
+  Splitting();
 });
 
 // smooth croll function

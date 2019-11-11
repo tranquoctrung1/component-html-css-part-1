@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Jomolhari|Yeon+Sung&display=swap");
 body .mobile-style {
   display: flex;
   align-items: center;
@@ -1078,3 +1079,51 @@ section.layer-3d-image {
     .knockout-text h1 span {
       font-size: .5em;
       margin: 0 10px; }
+
+.text-typing-animation {
+  font-family: 'Yeon Sung', cursive;
+  font-family: 'Jomolhari', serifcursive;
+  height: 100vh; }
+  .text-typing-animation .container {
+    height: 100%; }
+    .text-typing-animation .container .row {
+      height: 100%; }
+      .text-typing-animation .container .row .col {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .text-typing-animation .container .row .col .word {
+          visibility: hidden;
+          animation: typing-text 0s steps(2) forwards;
+          animation-delay: calc(0.04s * var(--word-index)); }
+
+.text-typing-animation2 {
+  font-family: 'Yeon Sung', cursive;
+  font-family: 'Jomolhari', serifcursive;
+  height: 100vh; }
+  .text-typing-animation2 .container {
+    height: 100%; }
+    .text-typing-animation2 .container .row {
+      height: 100%; }
+      .text-typing-animation2 .container .row .col {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .text-typing-animation2 .container .row .col .word {
+          opacity: 0;
+          animation: typing-text2 3s infinite;
+          animation-delay: calc(0.04s * var(--word-index)); }
+
+@keyframes typing-text {
+  0% {
+    visibility: hidden; }
+  100% {
+    visibility: visible; } }
+
+@keyframes typing-text2 {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }

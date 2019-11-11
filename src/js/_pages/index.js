@@ -96,6 +96,14 @@ $(document).ready(function()
       'background-position-x': - scroll_position + 'px',
     })
   })
+
+  // knockout-text
+  $('.knockout-text').on('mousemove',(e) =>
+  {
+    var moveX = (e.pageX * -1/50);
+    var moveY = (e.pageY * -1/50);
+    $('.knockout-text').css({'background-position': moveX + 'px '+ moveY + 'px'})
+  })
 })
 
 

@@ -1,0 +1,109 @@
+.nike-design
+	background: #070c24
+	min-height: 100vh
+	.container
+		height: 100%
+		.row
+			display: flex
+			justify-content: center
+			align-items: center
+			height: 100%
+			.col
+				position: relative
+				height: 100%
+				display: flex
+				flex-wrap: wrap
+				justify-content: space-between
+				width: 900px
+				height: 600px
+				background: #fff
+				margin: 20px
+				padding: 0
+				.img-box
+					width: 30%
+					height: 100%
+					position: relative
+					display: flex
+					justify-content: center
+					align-items: center
+					background: #066dbc
+					img 
+						position: relative
+						transform: rotate(-35deg)
+						width: 200%
+					&::before
+						content: 'Nike'
+						display: block
+						position: absolute
+						top: 10px
+						left: 10px
+						font-weight: 800
+						opacity: .1
+						color: #000000
+						font-size: 8em
+				.details
+					display: flex
+					justify-content: center
+					align-items: center
+					width: 70%
+					height: 100%
+					box-sizing: border-box
+					padding: 40px
+					.content
+						h2 
+							margin: 0 0 5px 0
+							padding: 0
+							font-size: 2.5em
+							line-height: .8em
+							color: #444
+							span 
+								font-size: 0.4em
+								text-transform: uppercase
+								letter-spacing: 2px
+								color: #999
+						p 
+							max-width: 90%
+							margin-left: 10%
+						h3 
+							margin: 0
+							padding: 0
+							font-size: 2.5em
+							color: #a2a2a2
+							float: left
+						button 
+							background: #006dbc
+							color: #fff 
+							border: none
+							outline: none
+							box-shadow: none
+							padding: 15px 20px
+							margin-top: 5px
+							font-size: 16px
+							letter-spacing: 1px
+							border-radius: 40px
+							font-weight: bold
+							float: right
+							cursor: pointer
+	@media screen and ( max-width: 1080px )
+		.container
+			height: auto
+			.img-box
+				padding: 40px
+				box-sizing: border-box
+				width: 100% !important
+				height: auto
+				overflow: hidden
+				text-align: center
+				img
+					transform: rotate(0deg) !important
+					max-width: 100%
+			.details
+				width: 100% !important
+				height: auto
+				padding: 20px
+				.content
+					p 
+						max-width: 100% !important
+						margin-left: 0 !important
+
+
